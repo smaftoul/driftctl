@@ -450,6 +450,7 @@ func TestTerraformStateReader_Azure_Resources(t *testing.T) {
 		{name: "private dns mx record", dirName: "azurerm_private_dns_mx_record", wantErr: false},
 		{name: "images", dirName: "azurerm_image", wantErr: false},
 		{name: "ssh public key", dirName: "azurerm_ssh_public_key", wantErr: false},
+		{name: "load balancer rule", dirName: "azurerm_lb_rule", wantErr: false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
